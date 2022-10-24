@@ -1,0 +1,13 @@
+.btn_texto::before{
+    content:'Pasa por encima';  
+}
+
+.btn_texto:hover{
+    /* content:"¡Hecho!"; */
+    background-color:green;
+    color:white;
+}
+
+.btn_texto::before{
+    content:'¡Hecho!';  
+}
