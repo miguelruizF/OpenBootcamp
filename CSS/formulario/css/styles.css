@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background: #161717;
 }
 
 p{
@@ -118,17 +119,20 @@ input[type='text'],input[type='password'], input[type='email']{
     border: 1px solid transparent;
     border-radius: 8px;
     outline: none;
-    background-color: #f3f3f4;
-    color: #0d0c22;
-
+    /* background-color: #f3f3f4; */
+    /* color: #0d0c22; */
+    color:#fff;
+    background-color: #212121;
 }
 input{
     transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+    
 }
 
 input:hover{
     border-color: rgba(0,0,0,0.1);
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #454045;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
 
