@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 
-html{
+body{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -10,6 +10,16 @@ p{
     margin: 0;
 }
 
+h1{
+    margin-bottom:35px;
+}
+
+.container{
+    max-width: 50%;
+    height: 100vh;
+    align-items: center;
+    margin: 0 auto;
+}
 
 .btn_google{
     background-color: #1a73e8;
@@ -26,6 +36,8 @@ p{
 .btn_google span{
     color: #fff;
     margin: 0 0 0 15px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .google{
@@ -48,8 +60,9 @@ p{
 
 .div_btns{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
+    
 }
 
 .twitter{
@@ -84,4 +97,102 @@ p{
     top:-15px;
     padding: 0 16px;
     background: #fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    margin: 9px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+input[type='text'],input[type='password'], input[type='email']{
+    height: 40px;
+    margin-bottom:5px;
+    width:100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+
+}
+input{
+    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+}
+
+input:hover{
+    border-color: rgba(0,0,0,0.1);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+input::placeholder{
+    font-size: 18px;
+    padding-left:15px;
+    font-weight: 500;
+}
+
+.user_data{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user_data input{
+    width: 350px;
+}
+
+label{
+    display: inherit;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+    margin: 12px 0;
+    
+}
+
+.checkbox{
+    flex-direction: row;
+}
+.checkbox input{
+    width: 16px;
+    height: 16px;
+}
+.checkbox span{
+    font-weight:300;
+    padding-left:10px;
+    margin:0;
+    font-size: 16.5px;
+}
+
+.btn_submit{
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 16px;
+    transition: background-color 200ms ease;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #ea4c89;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn_submit:hover{
+    background-color: #f082ac;
+    text-decoration: none;
 }
