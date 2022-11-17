@@ -1,0 +1,18 @@
+$color-main: #0075ff;
+
+.btn-main{
+    background-color: $color-main;
+    color: white;
+    padding: .25rem 1.5rem;
+    border-radius:.25rem;
+    border: none;
+    &:hover{
+        background-color: white;
+        color: $color-main;
+    }
+    &-s{
+        @extend .btn-main;
+        font-size: 0.75rem;
+        padding: .1rem 1rem;
+    }
+}
