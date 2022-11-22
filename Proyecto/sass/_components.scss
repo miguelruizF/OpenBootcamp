@@ -69,6 +69,32 @@ $color-main: #0075ff;
     }
 }
 
+.benefit{
+    display: flex;
+    flex-direction: column;
+    .icon{
+        color: $color-main;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .description{
+        .title{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .text{
+            color: #888;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    .cta{
+        color: $color-main;
+        font-weight: 600;
+        margin-top: 3rem;
+        text-align: center;
+    }
+}
 .feature{
     display: flex;
     flex-direction: column;

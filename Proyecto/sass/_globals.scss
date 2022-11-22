@@ -95,3 +95,36 @@ p{
         }
     }
 }
+
+.sec-benefits{
+    border-top: 1px solid #ccc;
+    @extend .sec-features, .intro;
+    .benefit-cards{
+        width: 100%;
+    }
+}
+
+.sec-kpis{
+    width: 100%;
+    background-color: components.$color-main;
+    color:white;
+    padding: 4rem 0;
+    .kpis{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .kpi{
+            display: inherit;
+            flex-direction: column;
+            align-items: center;
+            .number{
+                font-size: 3.5rem;
+                font-weight: 600;
+            }
+            .desc{
+                font-size: .9rem;
+                color: #ffffffaa;
+            }
+        }
+    }
+}
