@@ -7,6 +7,16 @@
     padding: 3rem;
 }
 
+// @mixin medium {
+//     @media screen and (max-width: 768px) {
+//         .features{
+//             .text{
+//                 max-width: 100%;
+//             }
+//         }
+//     }
+// }
+
 body{
     padding:0;
     margin: 0;
@@ -64,6 +74,7 @@ p{
         justify-content: space-between;
         // align-items: center;
         .text{
+            // @include medium();
             display: flex;
             justify-content: space-around;
             flex-direction: column;
@@ -125,6 +136,68 @@ p{
                 font-size: .9rem;
                 color: #ffffffaa;
             }
+        }
+    }
+} 
+
+.sec-onboarding{
+    @extend .sec-benefits, .intro;
+    .steps{
+        display:flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        .step-separator{
+            flex:1;
+            border-top: 2px solid #ddd;
+            margin: 0 1.5rem;
+        }
+    }
+}
+
+.sec-footer-cta{
+    background-color: components.$color-footer;
+    // width: 100%;
+    padding: 5rem;
+    background-image: url(../assets/img/crypto.webp);
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: 100%;
+    .footer-cta{
+        width: 50%;
+        .cta-title{
+            font-size: 2rem;
+        }
+        .cta-description{
+            font-size: 1.1rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sec-kpis{
+        .kpis{
+            // display: block;
+            flex-direction: column;
+        }
+    }
+    .sec-onboarding{
+        .steps{
+            // display: block;
+            flex-direction: column;
+        }
+    }
+    .features{
+        .text{
+            min-width: 100%;
+        }
+    }
+    .sec-footer-cta{
+        background-image: none;
+        .footer-cta{
+            width: 100%;
+            text-align: center;
         }
     }
 }
